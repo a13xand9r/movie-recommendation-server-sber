@@ -1,0 +1,132 @@
+{
+  "intents": {
+    "/Следующий совет": {
+      "matchers": [
+        {
+          "type": "phrase",
+          "rule": "следущий"
+        },
+        {
+          "type": "phrase",
+          "rule": "следующий фильм"
+        },
+        {
+          "type": "phrase",
+          "rule": "еще"
+        },
+        {
+          "type": "phrase",
+          "rule": "ещё"
+        },
+        {
+          "type": "phrase",
+          "rule": "следующая рекомендация"
+        },
+        {
+          "type": "phrase",
+          "rule": "дальше"
+        }
+      ],
+      "variables": {}
+    },
+    "/Да": {
+      "matchers": [
+        {
+          "type": "phrase",
+          "rule": "да"
+        },
+        {
+          "type": "phrase",
+          "rule": "давай"
+        }
+      ],
+      "variables": {}
+    },
+    "/Нет": {
+      "matchers": [
+        {
+          "type": "phrase",
+          "rule": "нет"
+        },
+        {
+          "type": "phrase",
+          "rule": "не надо"
+        }
+      ],
+      "variables": {}
+    },
+    "/Сколько рекомендаций": {
+      "matchers": [
+        {
+          "type": "phrase",
+          "rule": "сколько всего рекомендаций"
+        }
+      ],
+      "variables": {}
+    },
+    "/Помощь": {
+      "matchers": [
+        {
+          "type": "phrase",
+          "rule": "Что ты умеешь"
+        },
+        {
+          "type": "phrase",
+          "rule": "помощь"
+        }
+      ],
+      "variables": {}
+    },
+    "/Не тот фильм": {
+      "matchers": [
+        {
+          "type": "phrase",
+          "rule": "не тот фильм"
+        },
+        {
+          "type": "phrase",
+          "rule": "я имел ввиду не тот фильм"
+        }
+      ],
+      "variables": {}
+    },
+    "/Найти фильм": {
+      "matchers": [
+        {
+          "type": "phrase",
+          "rule": "порекомендуй фильм"
+        },
+        {
+          "type": "phrase",
+          "rule": "найди фильм"
+        },
+        {
+          "type": "phrase",
+          "rule": "похожие фильмы"
+        },
+        {
+          "type": "phrase",
+          "rule": "похожий фильм"
+        },
+        {
+          "type": "phrase",
+          "rule": "другой фильм"
+        },
+        {
+          "type": "phrase",
+          "rule": "новый фильм"
+        },
+        {
+          "type": "phrase",
+          "rule": "найти другой фильм"
+        },
+        {
+          "type": "phrase",
+          "rule": "поискать другой фильм"
+        }
+      ],
+      "variables": {}
+    }
+  },
+  "entities": {}
+}

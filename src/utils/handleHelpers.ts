@@ -21,9 +21,9 @@ export const sendNewMovie = async (
   initialPhrase: string = ''
 ) => {
   if (initialPhrase){
-    res.appendSuggestions(['Найти другой фильм', 'Ещё', 'Не тот фильм'])
+    res.appendSuggestions(['Давай другой фильм', 'Ещё', 'Не тот фильм'])
   } else{
-    res.appendSuggestions(['Найти другой фильм', 'Ещё', 'Сколько всего рекомендаций?'])
+    res.appendSuggestions(['Давай другой фильм', 'Ещё', 'Сколько всего рекомендаций?'])
   }
   let recommendationText: string[] = []
   if (req.request.payload.character.appeal === 'official') {
@@ -133,7 +133,7 @@ export const sendFirstRecommendation = async (
     session.recommendations = null
     res.appendBubble(`К сожалению, у меня нет рекомендаций для фильма ${foundMovies.results[foundMoviesIndex ?? 0].title}. Может это не тот фильм? Или попробуем найти другой фильм?`)
     res.setPronounceText(`К сожалению, у меня нет рекомендаций для фильма ${foundMovies.results[foundMoviesIndex ?? 0].title}. Может это не тот фильм? Или попробуем найти другой фильм?`)
-    res.appendSuggestions(['Не тот фильм', 'Найти другой фильм'])
+    res.appendSuggestions(['Не тот фильм', 'Давай другой фильм'])
     // res.setPronounceText('К сожалению, у меня нет рекомендаций для этого фильма. Может попробуем другой фильм?')
     // dispatch && dispatch(['searchMovie'])
   }

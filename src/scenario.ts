@@ -26,7 +26,7 @@ const systemScenario = createSystemScenario({
   NO_MATCH: ({ req, res, session }, dispatch) => {
     if (req.request.payload.character.appeal === 'official'){
       if (session.recommendations){
-        res.appendSuggestions(['Найти другой фильм', 'Ещё'])
+        res.appendSuggestions(['Давай другой фильм', 'Ещё'])
         res.setPronounceText('Скажите \"Ещё\" для следующей рекомендации или скажите \"Другой фильм\" чтобы узнать рекомендации на основе другого фильма.')
         res.appendBubble('Скажите \"Ещё\" для следующей рекомендации или скажите \"Другой фильм\" чтобы узнать рекомендации на основе другого фильма.')
       } else{

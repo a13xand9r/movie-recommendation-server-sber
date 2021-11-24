@@ -25,6 +25,10 @@
         {
           "type": "phrase",
           "rule": "дальше"
+        },
+        {
+          "type": "phrase",
+          "rule": "далее"
         }
       ],
       "variables": {}
@@ -94,23 +98,23 @@
       "matchers": [
         {
           "type": "phrase",
-          "rule": "порекомендуй фильм"
+          "rule": "порекомендуй сериал"
         },
         {
           "type": "phrase",
-          "rule": "найди фильм"
+          "rule": "найди сериал"
         },
         {
           "type": "phrase",
-          "rule": "похожие фильмы"
+          "rule": "похожие сериалы"
         },
         {
           "type": "phrase",
-          "rule": "похожий фильм"
+          "rule": "похожий сериал"
         },
         {
           "type": "phrase",
-          "rule": "другой фильм"
+          "rule": "другой сериал"
         },
         {
           "type": "phrase",

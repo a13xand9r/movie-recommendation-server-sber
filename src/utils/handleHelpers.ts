@@ -130,7 +130,7 @@ export const sendFirstRecommendation = async (
             res,
             recommendations.results[0],
             genres as MovieDB.Responses.Genre.Common,
-            `Рекомендации для фильма ${foundMovies.results[Number(session.foundMoviesIndex) ?? 0].title} `
+            `Рекомендации для фильма ${foundMovies.results[Number(session.foundMoviesIndex) ?? 0].title}. `
         )
     } else {
         session.recommendations = null

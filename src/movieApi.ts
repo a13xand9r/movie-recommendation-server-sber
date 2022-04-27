@@ -32,6 +32,7 @@ export const recommendMovies = async (movieId: number) => {
         movie_id: movieId
       }
     })
+    console.log(JSON.stringify(res.data))
     return res.data
   } catch (e) {
     console.log('movie Request error', e)
